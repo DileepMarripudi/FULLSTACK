@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Resetting default styles and box-sizing */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #3498db; /* Changed background color */
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #location-form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #2ecc71; /* Changed button color */
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #27ae60; /* Darker color on hover */
+        }
+
+        #weather-info {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form id="location-form">
+        <label for="location">Enter Location: </label>
+        <input type="text" id="location" placeholder="City, Country" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    <div id="weather-info">
+      
+    </div>
+
+    <script>
+        // JavaScript code remains the same as before
+    </script>
+</body>
+</html>
